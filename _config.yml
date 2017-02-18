@@ -1,12 +1,12 @@
 title:            Ikawka
-description:      In Code We Trust
+description:      Life would have been easier, if I have the source code.
 
 disqus_shortname:
 reading_time:     true
 words_per_minute: 200
 logo: images/logo.png
 
-excerpt_separator: <!--more-->
+excerpt_separator: <!-- more -->
 url: https://ikawka.github.io
 
 menu:
