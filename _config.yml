@@ -4,6 +4,16 @@ description:      In Code We Trust
 disqus_shortname:
 reading_time:     true
 words_per_minute: 200
-logo:             images/logo.png 
+logo: images/logo.png
+url: http://ikawka.github.io
+
+menu:
+  - title: 'Home'
+    url: '/'
+  - title: 'Tags'
+    url: '/tags'
+  - title: 'Categories'
+    url: '/categories'
+    type: 'categories'
 
 theme: jekyll-theme-cayman
