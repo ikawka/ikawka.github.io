@@ -24,7 +24,7 @@ menu:
   #       url: '/intro/sample-post/'
 owner:
   name:           Amiel Simbahon
-  site:           http://ikawka.github.io
+  site:           https://ikawka.github.io
   avatar:         images/avatar.jpg
   bio:            "Software Maker"
   email:          pixelazion@gmail.com
@@ -55,7 +55,7 @@ google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
 
-# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
 locale:      en_US
 future:      true
