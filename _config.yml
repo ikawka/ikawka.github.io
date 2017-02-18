@@ -1,4 +1,9 @@
 title:            Ikawka
 description:      In Code We Trust
 
+disqus_shortname:
+reading_time:     true
+words_per_minute: 200
+logo:             images/logo.png 
+
 theme: jekyll-theme-cayman
