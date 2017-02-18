@@ -5,6 +5,8 @@ disqus_shortname:
 reading_time:     true
 words_per_minute: 200
 logo: images/logo.png
+
+excerpt_separator: <!--more-->
 url: https://ikawka.github.io
 
 menu:
