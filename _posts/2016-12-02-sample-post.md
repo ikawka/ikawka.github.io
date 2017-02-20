@@ -2,6 +2,7 @@
 layout: post
 title: Bacon Ipsum
 description: "Initial Blog"
+published: 2016-12-02
 modified: 2016-12-02
 tags: []
 categories: [intro]

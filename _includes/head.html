@@ -54,7 +54,7 @@
 {
     "@context": "http://schema.org",
     "@type": "Article",
-    "author":"{{ site.owner.name }}", {% if page.tags %}
+    "author":"{{ site.title }}", {% if page.tags %}
     "articleSection":[{% for category in page.categories %}"{{category}}"{% unless forloop.last %},{% endunless %}{% endfor %}], {% endif %}
     "url":"{{ site.url }}{{page.url}}",{% if page.image.feature %}
     "image":"{{ site.url }}/images/{{ page.image.feature }}",
@@ -63,8 +63,12 @@
     "name":"{{page.title}}",
     "description":"{{ page.excerpt }}",{% if page.tags %}
     "keywords":[{% for tag in page.tags %}"{{tag}}"{% unless forloop.last %},{% endunless %}{% endfor %}],{% endif %}
-    "datePublished":"{{page.modified}}",
-    "publisher":"{{site.title}}",
+    "datePublished":"{{page.published}}",
+    "dateModified":"{{page.modified}}",
+    "publisher":{
+        "@type":"Person",
+        "name":"{{site.owner.name}}"
+    },
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "{{site.url}}"

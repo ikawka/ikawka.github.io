@@ -2,10 +2,13 @@
 layout: post
 title: Add Mime Types In Wordpress
 description: "How to add other mime types in wordpress"
+published: 2017-02-18
 modified: 2017-02-18
 tags: [mimes, svg, filter, upload mimes]
 categories: [wordpress]
 excerpt: If you are having trouble uploading a specific file with wordpress. Chances are they file type might not be allowed. However there is always a way to tell wordpress to recognize the file type. You can add the following code to your theme's function.php
+image:
+    feature: colorful.jpg
 ---
 <!-- more -->
 If you are having trouble uploading a specific file with wordpress. Chances are they file type might not be allowed. However there is always a way to tell wordpress to recognize the file type. You can add the following code to your

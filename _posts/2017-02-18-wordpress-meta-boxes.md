@@ -2,10 +2,13 @@
 layout: post
 title: Add Metabox To Any Post Type
 description: "How to add meta box to any post type"
+published: 2017-02-18
 modified: 2017-02-18
 tags: [metabox, metaboxes]
 categories: [wordpress]
 excerpt: So you want to up your game and add a little bit of complexity to your post or custom post type perhaps. Meta boxes might be one of the things that you are looking for.
+image:
+    feature: tabletop.jpg
 ---
 <!-- more -->
 So you want to up your game and add a little bit of complexity to your post or custom post type perhaps. Meta boxes might be one of the things that you are looking for.
