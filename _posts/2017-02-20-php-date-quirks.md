@@ -20,7 +20,6 @@ function getMonday($date){
     if(date('N', strtotime($date)) == 7){
         $date = date('Y-m-d', strtotime("-1 days", strtotime($date)));
     }
-
     return date('Y-m-d', strtotime("this week monday", strtotime($date)));
 }
 
@@ -28,10 +27,8 @@ function getSunday($date){
     if(date('N', strtotime($date)) == 7){
         $date = date('Y-m-d', strtotime("-1 days", strtotime($date)));
     }
-
     return date('Y-m-d', strtotime("this week sunday", strtotime($date)));
 }
-
 echo "Start: ".getMonday('2014-08-22');
 echo "End: ".getSunday('2014-08-22');
 ```
