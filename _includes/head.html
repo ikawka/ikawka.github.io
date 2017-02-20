@@ -57,7 +57,10 @@
     "author":"{{ site.title }}", {% if page.tags %}
     "articleSection":[{% for category in page.categories %}"{{category}}"{% unless forloop.last %},{% endunless %}{% endfor %}], {% endif %}
     "url":"{{ site.url }}{{page.url}}",{% if page.image.feature %}
-    "image":"{{ site.url }}/images/{{ page.image.feature }}",
+    "image":{
+        "@type":"Image",
+        "url":"{{ site.url }}/images/{{ page.image.feature }}"
+    },
     {% endif %}
     "headline":"{{page.description}}",
     "name":"{{page.title}}",
