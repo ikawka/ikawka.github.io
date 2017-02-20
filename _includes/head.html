@@ -58,8 +58,9 @@
     "articleSection":[{% for category in page.categories %}"{{category}}"{% unless forloop.last %},{% endunless %}{% endfor %}], {% endif %}
     "url":"{{ site.url }}{{page.url}}",{% if page.image.feature %}
     "image":{
-        "@type":"Image",
-        "url":"{{ site.url }}/images/{{ page.image.feature }}"
+        "@type":"Thing",
+        "url":"{{ site.url }}/images/{{ page.image.feature }}",
+        "itemType":"jpg"
     },
     {% endif %}
     "headline":"{{page.description}}",
