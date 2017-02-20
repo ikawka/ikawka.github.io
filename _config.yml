@@ -1,7 +1,7 @@
 title:            Ikawka
 description:      Life would have been easier, if I have the source code.
 
-disqus_shortname:
+disqus_shortname: ikawkablog
 reading_time:     true
 words_per_minute: 200
 logo: images/logo.png
@@ -17,6 +17,8 @@ menu:
   - title: 'Categories'
     url: '/categories'
     type: 'categories'
+  - title: 'Contact'
+    url: '/contact'
   # - title: 'Favorites'
   #   url: '#'
   #   submenu:
