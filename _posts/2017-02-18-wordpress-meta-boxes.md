@@ -9,6 +9,8 @@ categories: [wordpress]
 excerpt: So you want to up your game and add a little bit of complexity to your post or custom post type perhaps. Meta boxes might be one of the things that you are looking for.
 image:
     feature: tabletop.jpg
+    width: 1136
+    height: 320
 ---
 <!-- more -->
 So you want to up your game and add a little bit of complexity to your post or custom post type perhaps. Meta boxes might be one of the things that you are looking for.

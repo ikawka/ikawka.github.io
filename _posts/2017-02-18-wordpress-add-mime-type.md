@@ -9,6 +9,8 @@ categories: [wordpress]
 excerpt: If you are having trouble uploading a specific file with wordpress. Chances are they file type might not be allowed. However there is always a way to tell wordpress to recognize the file type. You can add the following code to your theme's function.php
 image:
     feature: colorful.jpg
+    width: 1136
+    height: 320
 ---
 <!-- more -->
 If you are having trouble uploading a specific file with wordpress. Chances are they file type might not be allowed. However there is always a way to tell wordpress to recognize the file type. You can add the following code to your

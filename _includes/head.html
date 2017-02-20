@@ -59,8 +59,10 @@
     "url":"{{ site.url }}{{page.url}}",{% if page.image.feature %}
     "image":{
         "@type":"ImageObject",
-        "contentUrl":"{{ site.url }}/images/{{ page.image.feature }}",
-        "name":"{{page.image.feature}}"
+        "url":"{{ site.url }}/images/{{ page.image.feature }}",
+        "name":"{{page.image.feature}}",
+        "width":"{{page.image.width}}",
+        "height":"{{page.image.height}}"
     },
     {% endif %}
     "headline":"{{page.description}}",
@@ -71,6 +73,7 @@
     "dateModified":"{{page.modified}}",
     "publisher":{
         "@type":"Person",
+        "@id":"{{site.id}}",
         "name":"{{site.owner.name}}"
     },
     "mainEntityOfPage": {
