@@ -54,7 +54,7 @@
 {
     "@context": "http://schema.org",
     "@type": "Article",
-    "author":"{{ site.title }}", {% if page.tags %}
+    "author":"{{ site.owner.name }}", {% if page.tags %}
     "articleSection":[{% for category in page.categories %}"{{category}}"{% unless forloop.last %},{% endunless %}{% endfor %}], {% endif %}
     "url":"{{ site.url }}{{page.url}}",{% if page.image.feature %}
     "image":{
@@ -72,9 +72,14 @@
     "datePublished":"{{page.published}}",
     "dateModified":"{{page.modified}}",
     "publisher":{
-        "@type":"Person",
-        "@id":"{{site.id}}",
-        "name":"{{site.owner.name}}"
+        "@type":"Organization",
+        "name":"{{site.title}}",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "{{ site.url }}/images/{{ site.logo }}",
+            "width": 400,
+            "height": 400
+        }
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
