@@ -17,8 +17,8 @@ menu:
   - title: 'Categories'
     url: '/categories'
     type: 'categories'
-  - title: 'Contact'
-    url: '/contact'
+  - title: 'Disclaimer'
+    url: '/disclaimer'
   # - title: 'Favorites'
   #   url: '#'
   #   submenu:

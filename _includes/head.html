@@ -54,7 +54,14 @@
 {
     "@context": "http://schema.org",
     "@type": "Article",
-    "author":"{{ site.owner.name }}", {% if page.tags %}
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.url }}"
+    },
+    "author":{
+        "@type":"Person",
+        "name":"{{ site.owner.name }}"
+    }, {% if page.tags %}
     "articleSection":[{% for category in page.categories %}"{{category}}"{% unless forloop.last %},{% endunless %}{% endfor %}], {% endif %}
     "url":"{{ site.url }}{{page.url}}",{% if page.image.feature %}
     "image":{
