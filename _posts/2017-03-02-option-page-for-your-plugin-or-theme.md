@@ -16,10 +16,11 @@ image:
   height: '320'
 ---
 
+<!-- more -->
 How to add option page to your plugin or theme.
 ```php?start_inline=true
 add_action('admin_menu', 'my_option_page');
- 
+
 function my_option_page(){
     add_menu_page(
         'Option Page Title',
@@ -39,13 +40,13 @@ function my_option_page(){
          'render_sub_page'
      );
 }
- 
+
 //Render your Option Page
 function render_option_page(){
     //do what you want here or include another php file
     include 'myoption-form.php';
 }
- 
+
 function render_sub_page(){
    //do what you want here or include another php file
 }
@@ -53,7 +54,7 @@ function render_sub_page(){
 To be able to keep the setting of your plugin or theme in the database you will need to register your settings.
 ```php?start_inline=true
 add_action( 'admin_init', 'register_my_setting' );
- 
+
 function register_my_setting() {
     register_setting(
         'my_options_group', //Option Group Name
@@ -76,11 +77,11 @@ Once you have successfully registered your setting, now it can be used in the op
       //basically tell WordPress to save the data
       //under the 'my_options_group'
       settings_fields( 'my_options_group' );
-      do_settings_sections( 'my_options_group' ); 
+      do_settings_sections( 'my_options_group' );
 ?>
 <!-- I use array name "my_option_name[some-setting]" for the field -->
 <input type="text" name="my_option_name[copyright-text]" value="<?php echo $options['copyright-text']; ?>" />
- 
+
 <!-- Use WordPress' default submit button -->
 <?php submit_button(); ?>
 </form>
