@@ -1,5 +1,5 @@
 ---
-title: Wordpres Ajax Frontend
+title: Wordpress Ajax Frontend
 description: Make ajax calls with wordpress for not logged in users.
 published: '2017-02-21'
 modified: '2017-02-21'
@@ -29,10 +29,10 @@ And then we make a action function  for our ajax
 function ajax_action(){
     //do something with the $_POST data here
     //like you do with normal WordPress stuffs
- 
+
     exit(); //this is needed
 }
- 
+
 add_action( 'wp_ajax_nopriv_ajax_action', 'ajax_action' );
 ```
 Take note of the wp_ajax_**nopriv**_ajax_action the **"nopriv"** makes it available to non logged in users. If you want to make you script work for logged in users as well, you need to duplicate your hook with the normal wp_ajax_ajax_action like so.
