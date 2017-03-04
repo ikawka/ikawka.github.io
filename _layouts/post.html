@@ -61,7 +61,12 @@
     <div class="entry-content">
         {% if page.image.feature %}
             <div class="entry-image-index">
-              <amp-img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }}"></amp-img>
+              <amp-img src="{{ site.url }}/images/{{ page.image.feature }}"
+              srcset="{{ site.url }}/images/{{ page.image.feature }} 640w, {{ site.url }}/images/{{ page.image.feature }} 320w"
+              width="{{ page.image.width }}"
+              height="{{ page.image.height }}"
+              layout="responsive"
+              alt="{{ page.title }}"></amp-img>
               <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }}" />
               {% if page.image.credit %}<div class="image-credit">Image source: <a target="_blank" href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></div><!-- /.image-credit -->{% endif %}
             </div>
